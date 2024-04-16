@@ -1,0 +1,142 @@
+body {
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#poke-logo {
+    margin-top: 0;
+}
+
+.container {
+    width: 90%; /* Cambiado a porcentaje */
+    max-width: 1200px; /* Ancho máximo */
+    height: 900px; /* Altura cambiada */
+    background: url(img/FONDO.png) no-repeat center center/ cover;
+    background-size: cover; /* Ajustado para que cubra todo el contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.cards {
+    height: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Hacer columnas adaptables */
+}
+
+.primera-carta {
+    height: 100%; /* Altura cambiada */
+    width: 100%; /* Ancho cambiado */
+    margin-top: 80px; /* Centrar horizontalmente */
+    margin-left: 40px;
+}
+
+.carta-dos {
+    margin: auto; 
+    margin-top: 150px;
+   
+}
+
+.carta-tres{
+    margin-top: 200px;
+    margin-left: 50px; 
+}
+
+input, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgb(75, 75, 243);
+}
+
+#pokemonInput {
+    margin-top: 20px;
+}
+
+.pk-img {
+    height: auto; /* Altura adaptable */
+    max-width: 100%; /* Ancho máximo */
+    transition: 1s;
+}
+
+.pk-img:hover {
+    transform: scale(1.2);
+}
+
+.pk-name {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em; /* Tamaño de fuente cambiado */
+    font-weight: bold;
+}
+
+.pk-ms {
+    font-weight: bold;
+    font-size: 1.5em; /* Tamaño de fuente cambiado */
+}
+
+ul {
+    list-style: none;
+    padding: 0; /* Añadido para quitar el relleno predeterminado */
+}
+
+#pokemon-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    grid-auto-flow: dense;
+    max-height: 600px; 
+    overflow-y:  scroll;
+    
+  }
+  
+  .item {
+    
+    padding: 20px;
+    
+  }
+  .grid-img {
+    height: 150px;
+    width: 150px;
+    transition: 1s;
+    
+  }
+ .grid-img:hover {
+    transform: scale(1.2);
+}
+
+
+
+.contenedor-stats{
+    
+    padding: 50px;
+    border-radius: 25px;
+    width: 150px;
+    text-align: left;
+    font-weight: bold;
+    background-color: rgb(241, 100, 100);
+    color: white;
+    height: 500px;
+   
+    
+}
+
+
+.progress {
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 5px;
+    background-color: rgb(75, 75, 243);
+}

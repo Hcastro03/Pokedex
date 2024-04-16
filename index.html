@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <img id='poke-logo' src="/Pokedex/img/pokedex.png" alt="">
+    <div class="container">
+        
+        <div class="cards">
+            <div class="primera-carta">
+                <input type="text" id="pokemonInput" placeholder="Nombre o numero de pokemon"><br>
+                <button id="buscar">Buscar Pokemon </button><br>
+            
+                <div id="pokemon-grid"></div>   
+                <button id="btn-ant">Anterior</button>
+                <button id="btn-sig">Siguiente</button> 
+            </div>   
+               
+            
+            <div class="carta-dos">
+                
+                <div id="pokemonInfo"></div>
+
+            </div>
+
+            <div class="carta-tres">
+                
+                <div id="pokemonStats"></div>
+
+            </div>
+        </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
